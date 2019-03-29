@@ -5,13 +5,13 @@ Read modbus arguments from 19000 address, and returns a json object.
 
 Programm flags:
 
--ip - janitaza ip address (defaut value "localhost");
+-ip - janitza ip address (defaut value "localhost");
 
--port - janitaza modbus tcp port (defaut value 502);
+-port - janitza modbus tcp port (defaut value 502);
 
--id - janitaza modbus slave ID (defaut value 1);
+-id - janitza modbus slave ID (defaut value 1);
 
--q - quantity of janitaza modbus arguments, value range 1 - 61 (defaut value 61).
+-q - quantity of janitza modbus arguments, value range 1 - 61 (defaut value 61).
 
 Example:
 
