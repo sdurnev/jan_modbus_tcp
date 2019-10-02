@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="generix_bacs_modbus_tcp_windows" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="generix_bacs_modbus_tcp" />
+    <working_directory value="$PROJECT_DIR$/" />
+    <parameters value="-ip=10.10.12.22 -id=1 -m=3 -q=1" />
+    <envs>
+      <env name="GOOS" value="windows" />
+      <env name="GOARCH" value="amd64" />
+    </envs>
+    <kind value="FILE" />
+    <filePath value="$PROJECT_DIR$/main.go" />
+    <directory value="$PROJECT_DIR$/" />
+    <output_directory value="$PROJECT_DIR$/bin/0.01.4/win" />
+    <option name="run" value="false" />
+    <method v="2" />
+  </configuration>
+</component>

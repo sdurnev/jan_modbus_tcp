@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Build_all" type="CompoundRunConfigurationType">
+    <toRun name="jan_modbus_tcp_rpi" type="GoApplicationRunConfiguration" />
+    <toRun name="jan_modbus_tcp_macos" type="GoApplicationRunConfiguration" />
+    <toRun name="jan_modbus_tcp_x64" type="GoApplicationRunConfiguration" />
+    <toRun name="jan_modbus_tcp_windows" type="GoApplicationRunConfiguration" />
+    <method v="2" />
+  </configuration>
+</component>
