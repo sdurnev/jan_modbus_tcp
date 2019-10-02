@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="generix_bacs_modbus_tcp_macos" type="GoApplicationRunConfiguration" factoryName="Go Application">
-    <module name="generix_bacs_modbus_tcp" />
+  <configuration default="false" name="jan_modbus_tcp_macos" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="jan_modbus_tcp" />
     <working_directory value="$PROJECT_DIR$/" />
-    <parameters value="-ip=10.10.12.22 -id=1 -m=3 -q=1" />
+    <parameters value="-ip=10.10.12.20 -id=1 -q=1" />
     <kind value="FILE" />
     <filePath value="$PROJECT_DIR$/main.go" />
     <directory value="$PROJECT_DIR$/" />
