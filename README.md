@@ -15,4 +15,4 @@ Programm flags:
 
 Example:
 
-jan_modbus_tcp -ip=192.168.10.10 -port=1502 -id=2 -q=10
+`jan_modbus_tcp -ip=192.168.10.10 -port=1502 -id=2 -q=10`
