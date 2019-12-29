@@ -16,7 +16,7 @@ import (
 !!!!!!!!!!!! VERSION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
-const version = "0.01.5"
+const version = "0.01.6"
 
 /*
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -108,9 +108,9 @@ func main() {
 	defer handler.Close()
 	client := modbus.NewClient(handler)
 
-	results, err := client.ReadInputRegisters(19000, uint16(*regQuantity)*2)
+	results, err := client.ReadHoldingRegisters(19000, uint16(*regQuantity)*2)
 	if err != nil {
-		fmt.Printf("{\"status\":\"error\", \"error\":\"%s\"}", err)
+		fmt.Printf("{\"status\":\"error\", \"error\":\"%s\", \"version\": \"%s\"}", err, version)
 		//fmt.Printf("%s\n", err)
 	}
 
@@ -129,14 +129,14 @@ func main() {
 
 	for l := 0; l < len(data); l++ {
 		if l == 0 {
-			fmt.Printf("{ \"%s\": ", paramName[l])
+			fmt.Printf("{\"%s\":", paramName[l])
 		} else {
-			fmt.Printf(", \"%s\": ", paramName[l])
+			fmt.Printf(",\"%s\":", paramName[l])
 		}
 		fmt.Print(data[l])
 	}
 	if len(results) != 0 {
-		fmt.Printf(", \"version\": \"%s\"}", version)
+		fmt.Printf(",\"version\":\"%s\"}", version)
 	}
 }
 
